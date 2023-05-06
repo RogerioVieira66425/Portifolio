@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+ 
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22d4fd;
+    --cor-houver: #272727;
+
+    --fonte-primaria:'Krona One', sans-serif;
+    --fonte-secundaria:'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0cm;
+    padding: 0cm;
+
+}
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabesalho{
+    padding: 2% 0 0 13%;
+}
+
+.cabesalho_menu{
+    display: flex;
+    gap: 80px;
+
+}
+
+.cabesalho_menu_link{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.Destaque-titulo {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao {
+    padding: 5% 13%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: justify;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2rem;
+    font-family: var(--fonte-primaria);
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.4rem;
+    font-family: var(--fonte-secundaria);
+}
+.Acesse_minhas_redes {
+    font-size: 1.1rem;
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+}
+
+.botoes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border: 2px solid var(--cor-terciaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 15px 0;
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-secundaria);
+}
+
+.foto {
+    width: 40%;
+}
+
+.foto-about{
+    width: 35%;
+    border-radius: 20px;
+
+}
+
+.link:hover{
+    background-color: var(--cor-houver);
+}
+
+.rodapé{
+    padding: 20px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+@media (max-width: 1200px){
+    .apresentacao {
+        flex-direction: column-reverse;
+    }
+
+    .cabesalho {
+        padding: 10%
+    }
+
+    .cabesalho_menu {
+        justify-content: center;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo{
+        width: auto;
+    }
+}
